@@ -16,7 +16,7 @@ namespace Hackathon.Controllers
         {
             //Go365ChallengerService service = new Go365ChallengerService();
             //var userChallenges = service.GetUserChallenges("123");
-            return new string[] { "value1", "value2","value3" };
+            return new string[] { "value1", "value2","value3","value4" };
         }
 
         // GET api/values/5
