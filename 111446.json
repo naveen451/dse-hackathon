@@ -1,0 +1,143 @@
+{
+    "UserName":"Sreeni",
+    "Challenges":[
+       {
+        "ChallengeName":"100 Day Dash",
+        "userStats":{
+            "RankWithInTeam":1,
+            "DailyAverageSteps":20000,
+            "OverallRankInThisChallenge":20
+        },
+        "teamStats":{            
+            "DailyAverageSteps":200000,
+            "OverallRankInThisChallenge":2,
+            "topper":{
+                "contentderGivenName":"Jatin",
+                "contentderStats":{
+                    "RankWithInTeam":5,
+                    "DailyAverageSteps":10000,
+                    "OverallRankInThisChallenge":40
+                }
+            }
+        },
+        "contentders":[
+            {
+                "contentderGivenName":"Sravan",
+                "contentderStats":{
+                    "RankWithInTeam":3,
+                    "DailyAverageSteps":15000,
+                    "OverallRankInThisChallenge":30
+                }
+            },
+            {
+                "contentderGivenName":"Mani",
+                "contentderStats":{
+                    "RankWithInTeam":4,
+                    "DailyAverageSteps":12000,
+                    "OverallRankInThisChallenge":35
+                }
+            }            
+        ]
+
+       },
+
+       {
+        "ChallengeName":"Weight loss challenge",
+        "userStats":{
+            "RankWithInTeam":1,
+            "DailyAverageSteps":20000,
+            "OverallRankInThisChallenge":20
+        },
+        "teamStats":{            
+            "DailyAverageSteps":200000,
+            "OverallRankInThisChallenge":2,
+            "topper":{
+                "contentderGivenName":"Jatin",
+                "contentderStats":{
+                    "RankWithInTeam":1,
+                    "DailyAverageSteps":20000,
+                    "OverallRankInThisChallenge":20
+                }
+            }
+        },
+        "contentders":[
+            {
+                "contentderGivenName":"Jatin",
+                "contentderStats":{
+                    "RankWithInTeam":1,
+                    "DailyAverageSteps":20000,
+                    "OverallRankInThisChallenge":20
+                }
+            },
+            {
+                "contentderGivenName":"Jatin",
+                "contentderStats":{
+                    "RankWithInTeam":1,
+                    "DailyAverageSteps":20000,
+                    "OverallRankInThisChallenge":20
+                }
+            },
+            {
+                "contentderGivenName":"Jatin",
+                "contentderStats":{
+                    "RankWithInTeam":1,
+                    "DailyAverageSteps":20000,
+                    "OverallRankInThisChallenge":20
+                }
+            }
+        ]
+
+       },
+
+       {
+        "ChallengeName":"Brianics Challenge",
+        "userStats":{
+            "RankWithInTeam":1,
+            "DailyAverageSteps":20000,
+            "OverallRankInThisChallenge":20
+        },
+        "teamStats":{            
+            "DailyAverageSteps":200000,
+            "OverallRankInThisChallenge":2,
+            "topper":{
+                "contentderGivenName":"Jatin",
+                "contentderStats":{
+                    "RankWithInTeam":1,
+                    "DailyAverageSteps":20000,
+                    "OverallRankInThisChallenge":20
+                }
+            }
+        },
+        "contentders":[
+            {
+                "contentderGivenName":"Jatin",
+                "contentderStats":{
+                    "RankWithInTeam":1,
+                    "DailyAverageSteps":20000,
+                    "OverallRankInThisChallenge":20
+                }
+            },
+            {
+                "contentderGivenName":"Jatin",
+                "contentderStats":{
+                    "RankWithInTeam":1,
+                    "DailyAverageSteps":20000,
+                    "OverallRankInThisChallenge":20
+                }
+            },
+            {
+                "contentderGivenName":"Jatin",
+                "contentderStats":{
+                    "RankWithInTeam":1,
+                    "DailyAverageSteps":20000,
+                    "OverallRankInThisChallenge":20
+                }
+            }
+        ]
+
+       }
+
+    ]
+       
+    
+}
