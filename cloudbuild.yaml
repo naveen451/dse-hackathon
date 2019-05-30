@@ -1,8 +1,7 @@
 steps:
+- name: 'gcr.io/cloud-builders/docker'
+  args: ['build', '-t', 'gcr.io/dse-hackathon-brianics/github.com/naveen451/dse-hackathon:$SHORT_SHA', '.']
+images: ['gcr.io/dse-hackathon-brianics/github.com/naveen451/dse-hackathon:$SHORT_SHA']
 - name: "gcr.io/cloud-builders/gcloud"
-<<<<<<< HEAD
   args: ["app", "deploy",'--image-url=gcr.io/dse-hackathon-brianics/github.com/naveen451/dse-hackathon:$SHORT_SHA']
-=======
-  args: ["app", "deploy",'--image-url=gcr.io/dse-hackathon-brianics/github.com/naveen451/dse-hackathon:88b2b70']
->>>>>>> a9119757fb753adaad9c12766c9d5a3ad9c7840e
 timeout: "1600s"
