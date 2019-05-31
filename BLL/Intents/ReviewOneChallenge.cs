@@ -25,7 +25,7 @@ namespace DSEHackatthon.BLL{
             //try{
             if(challenge!=null){
                  return new WebhookResponse{
-                    FulfillmentText= $@"You have {challenge.userStats.DailyAverageSteps} dialy average steps
+                    FulfillmentText= $@"You have {challenge.userStats.DailyAverageSteps} daily average steps
                     and you are rank {challenge.userStats.RankWithInTeam} in your team and 
                     rank {challenge.userStats.OverallRankInThisChallenge} overall. Would 
                     you like to review your team progress?"

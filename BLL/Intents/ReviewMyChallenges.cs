@@ -24,7 +24,7 @@ namespace DSEHackatthon.BLL{
                 var sb = new StringBuilder();
 
                 foreach(var challenge in userChallenges.Challenges){
-                    sb.AppendLine(challenge.ChallengeName+", ");
+                    sb.AppendLine(challenge.ChallengeName+". ");
                 }
 
                 var s= sb.ToString();

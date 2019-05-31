@@ -66,8 +66,10 @@ namespace DSEHackatthon.BLL{
   
                 };
             }*/
-                       
-            return new WebhookResponse{
+                if(string.IsNullOrEmpty(contenderName)){
+                    contenderName= "This person";
+                }       
+            return new WebhookResponse{                
                 FulfillmentText=$@"{contenderName} is not enrolled in this challenge. can I help you with something else?"
             };
             
