@@ -30,7 +30,7 @@ namespace DSEHackatthon.BLL{
                 var s= sb.ToString();
 
                 return new WebhookResponse{
-                FulfillmentText=$@"Sure, you have {userChallenges.Challenges.Count} active challenges. {s}. What would you like to review next?"
+                FulfillmentText=$@"Sure, you have {userChallenges.Challenges.Count} active challenges. {s} What would you like to review next?"
             };
             }
             else if(userChallenges.Challenges.Count==1){
