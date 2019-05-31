@@ -4,6 +4,10 @@ using DSEHackatthon.CustomAttributes;
 using DSEHackatthon.services.interfaces;
 using DSEHackatthon.services.mocks;
 using System;
+using System.Net.Http;
+using System.Net.Http.Headers;
+using Newtonsoft.Json;
+using DSEHackatthon.models;
 
 namespace DSEHackatthon.BLL{
     [IntentHandler("Welcome.Go365")]
@@ -16,7 +20,11 @@ namespace DSEHackatthon.BLL{
         }
 
         public override WebhookResponse Handle(WebhookRequest request){
-            var memberName= request.QueryResult.Parameters.Fields["membername"].StringValue;
+            var accesstoken =request.OriginalDetectIntentRequest.Payload.Fields["user"].StructValue.Fields["accessToken"].StringValue;
+
+             var memberName= GetMemberName(accesstoken);
+
+            //var memberName= request.QueryResult.Parameters.Fields["membername"].StringValue;
                       
             string   memberId = _service.GetMemberId(memberName);
             if(memberId==null){
@@ -39,6 +47,18 @@ namespace DSEHackatthon.BLL{
                 };
             } */
 
+        }
+
+        private string GetMemberName(string accessToken){
+            
+            HttpClient httpClient = new HttpClient();
+            httpClient.DefaultRequestHeaders.Authorization 
+                         = new AuthenticationHeaderValue("Bearer", accessToken);
+            Task<string> s = httpClient.GetStringAsync("https://dev-9kam6mdo.auth0.com/userinfo");
+             string r= s.Result;            
+            var user =JsonConvert.DeserializeObject<user>(r);
+            return user.name;
+            
         }
     }
 }
