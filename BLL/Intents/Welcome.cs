@@ -37,8 +37,7 @@ namespace DSEHackatthon.BLL{
             _conversation.conversationState.MemberId=memberId; 
             _conversation.conversationState.UserChallengeModel=userChallenges;                 
             return new WebhookResponse{
-                FulfillmentText=$@"Hello {userChallenges.UserName}, welcome to challengers service
-                what can I do for you? I can provide your challenge progress or I can review your challenges"
+                FulfillmentText=$@"it's a new day,{userChallenges.UserName}. what can I do for you?"
             };
             /*}
             catch{

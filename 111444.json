@@ -1,40 +1,40 @@
 {
-    "UserName":"Naveen Kumar",
+    "UserName":"Naveen",
     "Challenges":[
        {
         "ChallengeName":"100 Day Dash",
         "userStats":{
             "RankWithInTeam":1,
-            "DailyAverageSteps":20000,
-            "OverallRankInThisChallenge":20
+            "DailyAverageSteps":11000,
+            "OverallRankInThisChallenge":167
         },
         "teamStats":{            
-            "DailyAverageSteps":200000,
-            "OverallRankInThisChallenge":2,
+            "DailyAverageSteps":8000,
+            "OverallRankInThisChallenge":212,
             "topper":{
-                "contentderGivenName":"Jatin",
+                "contentderGivenName":"Naveen",
                 "contentderStats":{
-                    "RankWithInTeam":5,
-                    "DailyAverageSteps":10000,
-                    "OverallRankInThisChallenge":40
+                    "RankWithInTeam":1,
+                    "DailyAverageSteps":11000,
+                    "OverallRankInThisChallenge":167
                 }
             }
         },
         "contentders":[
             {
-                "contentderGivenName":"Sravan",
+                "contentderGivenName":"John",
                 "contentderStats":{
-                    "RankWithInTeam":3,
-                    "DailyAverageSteps":15000,
-                    "OverallRankInThisChallenge":30
+                    "RankWithInTeam":2,
+                    "DailyAverageSteps":9000,
+                    "OverallRankInThisChallenge":230
                 }
             },
             {
-                "contentderGivenName":"Mani",
+                "contentderGivenName":"Jatin",
                 "contentderStats":{
-                    "RankWithInTeam":4,
-                    "DailyAverageSteps":12000,
-                    "OverallRankInThisChallenge":35
+                    "RankWithInTeam":3,
+                    "DailyAverageSteps":7000,
+                    "OverallRankInThisChallenge":300
                 }
             }            
         ]
@@ -44,19 +44,19 @@
        {
         "ChallengeName":"DSE Challenge",
         "userStats":{
-            "RankWithInTeam":1,
-            "DailyAverageSteps":20000,
-            "OverallRankInThisChallenge":20
+            "RankWithInTeam":3,
+            "DailyAverageSteps":6000,
+            "OverallRankInThisChallenge":500
         },
         "teamStats":{            
-            "DailyAverageSteps":200000,
-            "OverallRankInThisChallenge":2,
+            "DailyAverageSteps":11000,
+            "OverallRankInThisChallenge":88,
             "topper":{
                 "contentderGivenName":"Jatin",
                 "contentderStats":{
                     "RankWithInTeam":1,
-                    "DailyAverageSteps":20000,
-                    "OverallRankInThisChallenge":20
+                    "DailyAverageSteps":15000,
+                    "OverallRankInThisChallenge":50
                 }
             }
         },
@@ -65,77 +65,21 @@
                 "contentderGivenName":"Jatin",
                 "contentderStats":{
                     "RankWithInTeam":1,
-                    "DailyAverageSteps":20000,
-                    "OverallRankInThisChallenge":20
+                    "DailyAverageSteps":15000,
+                    "OverallRankInThisChallenge":50
                 }
             },
             {
-                "contentderGivenName":"Jatin",
+                "contentderGivenName":"Lisa",
                 "contentderStats":{
-                    "RankWithInTeam":1,
-                    "DailyAverageSteps":20000,
-                    "OverallRankInThisChallenge":20
+                    "RankWithInTeam":2,
+                    "DailyAverageSteps":8000,
+                    "OverallRankInThisChallenge":200
                 }
-            },
-            {
-                "contentderGivenName":"Jatin",
-                "contentderStats":{
-                    "RankWithInTeam":1,
-                    "DailyAverageSteps":20000,
-                    "OverallRankInThisChallenge":20
-                }
-            }
+            }            
         ]
 
-       },
-
-       {
-        "ChallengeName":"Hackathon Challenge",
-        "userStats":{
-            "RankWithInTeam":1,
-            "DailyAverageSteps":20000,
-            "OverallRankInThisChallenge":20
-        },
-        "teamStats":{            
-            "DailyAverageSteps":200000,
-            "OverallRankInThisChallenge":2,
-            "topper":{
-                "contentderGivenName":"Jatin",
-                "contentderStats":{
-                    "RankWithInTeam":1,
-                    "DailyAverageSteps":20000,
-                    "OverallRankInThisChallenge":20
-                }
-            }
-        },
-        "contentders":[
-            {
-                "contentderGivenName":"Jatin",
-                "contentderStats":{
-                    "RankWithInTeam":1,
-                    "DailyAverageSteps":20000,
-                    "OverallRankInThisChallenge":20
-                }
-            },
-            {
-                "contentderGivenName":"Sravan",
-                "contentderStats":{
-                    "RankWithInTeam":1,
-                    "DailyAverageSteps":20000,
-                    "OverallRankInThisChallenge":20
-                }
-            },
-            {
-                "contentderGivenName":"Sreeni",
-                "contentderStats":{
-                    "RankWithInTeam":1,
-                    "DailyAverageSteps":20000,
-                    "OverallRankInThisChallenge":20
-                }
-            }
-        ]
-
-       }
+       }     
 
     ]
        

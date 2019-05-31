@@ -47,20 +47,17 @@ namespace DSEHackatthon.BLL{
 
              if(difSteps>0){
                    return new WebhookResponse{
-                    FulfillmentText= $@"Congrats, you are {difSteps} steps ahead of {contenderStats.contentderGivenName}.
-                    keep up."  
+                    FulfillmentText= $@"Congrats, you are {difSteps} steps ahead of {contenderStats.contentderGivenName}. keep up."  
                 };
              }
              if(difSteps==0){
                    return new WebhookResponse{
-                    FulfillmentText= $@"you are and {contenderStats.contentderGivenName} has same numnber of steps.
-                    keep up."  
+                    FulfillmentText= $@"you and {contenderStats.contentderGivenName} have same numnber of steps. keep up."  
                 };
              }
 
                 return new WebhookResponse{
-                    FulfillmentText= $@"you are {contentderSteps-userSteps} steps lagging to {contenderStats.contentderGivenName}.
-                    just try to more active to beat  {contenderStats.contentderGivenName}."  
+                    FulfillmentText= $@"{contenderStats.contentderGivenName} is leading by {contentderSteps-userSteps} steps.just try to more active to beat  {contenderStats.contentderGivenName}."  
                 };
             }
             /*           catch{
@@ -71,7 +68,7 @@ namespace DSEHackatthon.BLL{
             }*/
                        
             return new WebhookResponse{
-                FulfillmentText=$@"Sorry I could not find {contenderName}"
+                FulfillmentText=$@"{contenderName} is not enrolled in this challenge. can I help you with something else?"
             };
             
 

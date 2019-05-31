@@ -24,26 +24,26 @@ namespace DSEHackatthon.BLL{
                 var sb = new StringBuilder();
 
                 foreach(var challenge in userChallenges.Challenges){
-                    sb.AppendLine(challenge.ChallengeName);
+                    sb.AppendLine(challenge.ChallengeName+", ");
                 }
 
                 var s= sb.ToString();
 
                 return new WebhookResponse{
-                FulfillmentText=$@"I see you have {userChallenges.Challenges.Count} active challenges. {s}. What would like to review "
+                FulfillmentText=$@"Sure, you have {userChallenges.Challenges.Count} active challenges. {s}. What would you like to review next?"
             };
             }
             else if(userChallenges.Challenges.Count==1){
                 _conversation.conversationState.ChallengeName=userChallenges.Challenges[0].ChallengeName;
                 return new WebhookResponse{
-                FulfillmentText=$@"I see you have 1 active challenge, {userChallenges.Challenges[0].ChallengeName}",
+                FulfillmentText=$@"you have 1 active challenge, {userChallenges.Challenges[0].ChallengeName}. would you like to review?",
                 
             };
 
             }
                        
             return new WebhookResponse{
-                FulfillmentText=$@"Sorry I could not find any challenges to review"
+                FulfillmentText=$@"Sorry I could not find any active challenges to review"
             };
             
 

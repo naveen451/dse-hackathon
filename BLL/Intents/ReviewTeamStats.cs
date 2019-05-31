@@ -28,9 +28,9 @@ namespace DSEHackatthon.BLL{
             //try{
             if(challenge!=null){
                 return new WebhookResponse{
-                    FulfillmentText= $@"Your team have {challenge.teamStats.DailyAverageSteps} steps
-                    and in {challenge.teamStats.OverallRankInThisChallenge} with {challenge.teamStats.topper.contentderGivenName}
-                    in leading position with {challenge.teamStats.topper.contentderStats.DailyAverageSteps} daily average steps"
+                    FulfillmentText= $@"Your team has {challenge.teamStats.DailyAverageSteps} dialy average steps
+                    and rank {challenge.teamStats.OverallRankInThisChallenge}. {challenge.teamStats.topper.contentderGivenName}
+                    is leading with {challenge.teamStats.topper.contentderStats.DailyAverageSteps} daily average steps"
   
                 };
             }
@@ -42,7 +42,7 @@ namespace DSEHackatthon.BLL{
             }*/
                        
             return new WebhookResponse{
-                FulfillmentText=$@"Sorry I could not find challenge to review"
+                FulfillmentText=$@"Sorry, that challenge is not available. anything else I can help?"
             };
             
 

@@ -44,21 +44,18 @@ namespace DSEHackatthon.BLL{
 
              if(difSteps>0){
                    return new WebhookResponse{
-                    FulfillmentText= $@"Congrats, you are already {difSteps} steps ahead of {contenderStats.contentderGivenName}.
-                    keep up."  
+                    FulfillmentText= $@"Congrats, you are already {difSteps} steps ahead of {contenderStats.contentderGivenName}. keep up."  
                 };
              }
              if(difSteps==0){
                    return new WebhookResponse{
-                    FulfillmentText= $@"you are and {contenderStats.contentderGivenName} has same numnber of steps.
-                    keep up and try to be more active"  
+                    FulfillmentText= $@"you and {contenderStats.contentderGivenName} have same numnber of steps. keep up and try to be more active"  
                 };
              }
 
                 return new WebhookResponse{
-                    FulfillmentText= $@"you are {contentderSteps-userSteps} steps lagging to {contenderStats.contentderGivenName}.
-                    just try to more active to beat  {contenderStats.contentderGivenName}. few suggestions are take a 100 steps for every 30 minutes
-                    or do simple workout more number of times in a day if you could not hit gym"  
+                    FulfillmentText= $@"{contenderStats.contentderGivenName} is leading by {contentderSteps-userSteps} steps.just try to more active to beat  {contenderStats.contentderGivenName}.
+                    you may want to register for the Humana walkathon at Tom Saywer park in Louisville on june 8th "  
                 };
             }
             /*           catch{
@@ -69,7 +66,7 @@ namespace DSEHackatthon.BLL{
             }*/
                        
             return new WebhookResponse{
-                FulfillmentText=$@"Sorry I could not find {contenderName}"
+                FulfillmentText=$@"{contenderName} is not enrolled in this challenge. can I help you with something else?"
             };
             
 

@@ -24,11 +24,11 @@ namespace DSEHackatthon.BLL{
              
             //try{
             if(challenge!=null){
-                return new WebhookResponse{
-                    FulfillmentText= $@"You have {challenge.userStats.DailyAverageSteps} steps
-                    and you are in {challenge.userStats.RankWithInTeam} rank with in your team and 
-                    you are in {challenge.userStats.OverallRankInThisChallenge} rank overall. Would you like
-                    to review Team progress"
+                 return new WebhookResponse{
+                    FulfillmentText= $@"You have {challenge.userStats.DailyAverageSteps} dialy average steps
+                    and you are rank {challenge.userStats.RankWithInTeam} in your team and 
+                    rank {challenge.userStats.OverallRankInThisChallenge} overall. Would 
+                    you like to review your team progress?"
   
                 };
             }
